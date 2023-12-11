@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+
+<body>
+<!-- Operatory arytmetyczne
+ +
+ - 
+ *
+ /   
+ % 
+ ++
+ --
+ -a 
+<script>
+    console.log("Hello");
+    let a = 23;
+    let b = 51;
+    console.log(a+b);
+    console.log(a-b);
+    a = 8;
+    console.log(a*b);
+    console.log(a/b);
+    console.log(a%b);
+</script>
+-->
+<style>
+</style>
+<div class="wrapper">
+
+        <label for="text">Wpisz tekst</label>
+        <input type="text" id="text">
+        <button onclick="getValue()">denis</button>
+        <button onclick="changeFontColor()">Zmień kolor</button>
+        <button onclick="changeBackground()">Zmień kolor</button>
+        <button onclick="changeColor('red')">Zmień kolor</button>
+        <button onclick="changeFontSize()">Zmień wielkość denisa</button>
+        <button onclick="clear2()">usuń</button>
+    <div id="result">
+
+    </div>
+
+<script>
+    function getValue(){
+        var inputValue = document.getElementById("text").value;
+        console.log(inputValue);
+        document.getElementById("result").innerText = inputValue;
+    }
+    function changeFontColor(){
+        document.getElementById("result").style.color = "pink";
+    }
+    function changeBackground(){
+        document.getElementById("result").style.background = "green";
+    }
+    function changeColor(color){
+        document.getElementById("result").style.color = color;
+    }
+    function changeFontSize(){
+        document.getElementById("result").style.fontSize = "80px";
+    }
+    function clear2(){
+        document.getElementById("result").style.color = "black";
+        document.getElementById("result").style.fontSize = "1rem";
+        document.getElementById("result").style.background = "white";
+        
+    }
+
+</script>
+</body>
+</html>
